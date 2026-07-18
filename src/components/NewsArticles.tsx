@@ -181,7 +181,7 @@ export default function NewsArticles({ lang }: NewsArticlesProps) {
                 initial={{ opacity: 0, scale: 0.95, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                className={`inline-block align-bottom bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full border border-zinc-200 dark:border-zinc-800 ${lang === 'fa' ? 'text-right' : 'text-left'}`}
+                className={`relative z-10 inline-block align-bottom bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-3xl sm:w-full border border-zinc-200 dark:border-zinc-800 ${lang === 'fa' ? 'text-right' : 'text-left'}`}
               >
                 {/* Meta Header */}
                 <div className={`px-6 py-4 bg-zinc-50 dark:bg-zinc-950 border-b border-zinc-100 dark:border-zinc-800 flex justify-between items-center ${lang === 'fa' ? 'flex-row' : 'flex-row-reverse'}`}>
